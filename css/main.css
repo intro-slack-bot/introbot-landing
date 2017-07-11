@@ -94,26 +94,41 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    color: white;
+}
+
 main {
-    text-align: center;
+    background: url('../img/team.jpg');
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
 }
 
 #intro {
+    text-align: center;
     padding-top: 100px;
     height: 90vh;
-}
+/*    background-color: rgba(0, 0, 0, 0.28);
+*/}
 
 #add-intro {
+    color: black;
     height: 50vh;
 }
 
 #thank {
+    color: black;
     height: 50vh;
 }
 
 #use-me {
+    color: black;
     background: #DAF0EE;
     padding: 20px 10px;
+    text-align: center;
 }
 
 footer {
@@ -128,7 +143,8 @@ footer p {
 }
 
 #header-content {
-    margin: 10px 5px;
+    padding: 10px 5px;
+    margin: 0;
 }
 
 
