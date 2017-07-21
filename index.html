@@ -9,10 +9,15 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="css/main.css">
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+
     </head>
     <body>
 <!-- 		<header>
@@ -26,19 +31,58 @@
 		</nav>
  		<main>
 			<div id = "intro">
-				<h2>A Slack bot to get to know your team mates.</h2>
-				<h3>You can get their self-introduction and their helpfulness points.</h3>
-				<a href="https://slack.com/oauth/authorize?scope=users:read,commands,bot&client_id=204082547206.207027688375"><img alt="Add to Slack" height="50" width="180" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>	
+				<div id = "intro-content">
+					<h2>A Slack bot to get to know your team mates.</h2>
+					<h3>You can get their self-introduction and their helpfulness points.</h3>
+					<a href="https://slack.com/oauth/authorize?scope=users:read,commands,bot&client_id=204082547206.207027688375"><img alt="Add to Slack" height="50" width="180" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+				</div>
+	
 			</div>
 
 		</main>
-			<div id = "add-intro">
-				<h4>Add Intro</h4>
+		<div class = "container-fluid">
+			<div id = "add-intro" class = "row">
+				<div class = "col-md-6 col-xs-12">
+					<h4>Add Intro</h4>
+					<p>You can begin your introduction with key word
+					<code>addIntro</code> and your self-introduction will be added to the database.
+					</p>
+				</div>
+				<div class = "col-md-6 col-xs-12">
+					<img src="img/add-intro.png" alt="addIntro Image">
+				</div>
 			</div>
 
-			<div id = "thank">
-				<h4>Thank Your Teammates</h4>
+			<div id = "thank" class = "row">
+				<div class = "col-md-6 col-xs-12">
+					<h4>Thank Your Teammates</h4>
+					<p>You can thank your teammates by saying<code>thank [@someone]</code> in your team channel, your teammates will be notified and its helpfulness score will increase. 
+					</p>
+				</div>
+				<div class = "col-md-6 col-xs-12">
+					<img src="img/thank.png" alt="addIntro Image">
+				</div>
 			</div>
+
+		</div>
+		
+		<div class = "container-fluid">
+			<h2 class = "text-center">List of Command</h2>
+			<dl class="dl-horizontal">
+			  <dt><code>addintro [intro Content]</code></dt>
+			  <dd>Use this to add your introduction to the database and let people know you better</dd>
+			  <dt><code>thank [@someone]</code></dt>
+			  <dd>Use this when someone helped you</dd>
+			  <dt><code>/introbot getintro [username]</code></dt>
+			  <dd>Use this command when you want to see someone's introduction~</dd>
+			  <dt><code>/introbot getpoint [username]</code></dt>
+			  <dd>You will get your teammates helpfulness score</dd>
+			  <dt><code>getpoint [username]</code></dt>
+			  <dd>Same as <code>/introbot getpoint [username]</code>You will get your teammates helpfulness score</dd>
+
+			</dl>
+
+		</div>
 			
 			<div id = "use-me">
 					<p>Start using me now.<strong>No sign up required</strong></p>
@@ -47,7 +91,8 @@
 			</div>
 
 		<footer>
-			<p>Built by Pankaja and Leofis</p>
+			<p>Built by <a href="https://github.com/pankaja-shree">Pankaja</a> and <a href="https://github.com/524119574">Leofis</a></p>
+			<div><a href="#">View our Privacy Policy</a></div>
 		</footer>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
