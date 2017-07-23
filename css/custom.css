@@ -9,7 +9,7 @@ main {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
 }
 
@@ -51,6 +51,11 @@ h4 {
     background: #DAF0EE;
     padding: 20px 10px;
     text-align: center;
+}
+
+#command-title {
+    color: black;
+    padding: 0 0 10px 0;
 }
 
 footer {
@@ -109,7 +114,17 @@ dl {
     }
     #add-intro {
         padding: 30px;
-    }    
+    }
+
+    main h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }  
+
+    main h3 {
+        font-weight: 300;
+    }
+    }  
 }
 
 
