@@ -22,10 +22,11 @@
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 100%;
+  max-height: 100%;
 }
 body {
   /* Margin bottom by footer height */
+  max-height: 100%;
   margin-bottom: 60px;
 }
 .footer {
@@ -35,6 +36,7 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+    text-align: center;
 }
 
 </style>
@@ -59,7 +61,7 @@ body {
 			
 			
 
-		<footer>
+		<footer class = "footer">
             <div id = "use-me">
 					<p>Start using me now.<strong>No sign up required</strong></p>
 					<a href="https://slack.com/oauth/authorize?scope=users:read,commands,bot&client_id=204082547206.207027688375"><img alt="Add to Slack" height="50" width="180" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
